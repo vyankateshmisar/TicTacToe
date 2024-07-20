@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>TicTacToe</title>
+  </head>
+  <body>
+    <div id="info">
+      <h2 id="info-title">Tic Tac Toe</h2>
+      <div class="info__player">
+        <img
+          src="./images/cross.png"
+          alt="Player 1 Icon"
+          class="info__player__icon"
+        />
+        <h1 id="info__player__name1">Player 1</h1>
+        <h1>:</h1>
+        <h1 id="info__player__score1">0</h1>
+      </div>
+      <div class="info__player">
+        <img
+          src="./images/circle.png"
+          alt="Player 2 Icon"
+          class="info__player__icon"
+        />
+        <h1 id="info__player__name2">Player 2</h1>
+        <h1>:</h1>
+        <h1 id="info__player__score2">0</h1>
+      </div>
+    </div>
+    <div id="grid">
+      <div id="grid_square-1" class="grid_square"></div>
+      <div id="grid_square-2" class="grid_square"></div>
+      <div id="grid_square-3" class="grid_square"></div>
+      <div id="grid_square-4" class="grid_square"></div>
+      <div id="grid_square-5" class="grid_square"></div>
+      <div id="grid_square-6" class="grid_square"></div>
+      <div id="grid_square-7" class="grid_square"></div>
+      <div id="grid_square-8" class="grid_square"></div>
+      <div id="grid_square-9" class="grid_square"></div>
+    </div>
+    <div id="instructions">
+      <h2 id="instructions__text">Click the Button to Start</h2>
+      <button id="instructions__btn">Start Gamey</button>
+    </div>
+    <div id="modal">
+      <div id="modal__content">
+        <h2>Enter Player Name</h2>
+        <form>
+          <label for="player1">Player 1</label>
+          <input
+            type="text"
+            id="player1"
+            name="Player 1"
+            placeholder="Coco"
+            maxlength="6"
+            required
+          />
+          <label for="player2">Player 2</label>
+          <input
+            type="text"
+            id="player2"
+            name="Player 2"
+            placeholder="Mama"
+            maxlength="6"
+            required
+          />
+          <input type="submit" value="Start Gamey" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
